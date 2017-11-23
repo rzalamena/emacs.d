@@ -25,7 +25,17 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 
+(desktop-save-mode t)
+
 (require 'base16-default-dark-theme)
+
+(require 'whitespace)
+(setq whitespace-style '(face trailing lines-tail empty
+			      space-after-tab::tab space-after-tab::space
+			      space-after-tab space-before-tab::tab
+			      space-before-tab::space space-before-tab))
+
+(global-whitespace-mode 1)
 
 
 ;; Editing
